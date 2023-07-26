@@ -64,11 +64,16 @@ body {
     transition: .3s ease;
 }
 
-/* .main.active {
+.main.active {
     filter: blur(15px);
     pointer-events: none;
-} */
+}
 
+.container {
+    display: flex;
+    height: 100vh;
+    width: 200%;
+}
 
 .home {
     height: 100vh;
@@ -238,4 +243,22 @@ body {
 .popup-info .btn-group .info-btn:nth-child(2):hover {
     background: #004C91;
     border-color: #004C91;
+}
+
+.quiz-section {
+    position: relative;
+    left: -50%;
+    /* left: 0; */
+    width: 100%;
+    background: #09001d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: .8s ease-in-out;
+    transition-delay: .25s;
+}
+
+.quiz-section.active {
+    left: 0;
 }
