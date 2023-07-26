@@ -128,16 +128,16 @@ body {
     background: #fff;
     border-radius: 6px;
     padding: .625rem 1.6rem;
-    /* opacity: 0; */
+    opacity: 0;
     pointer-events: none;
     transition: .3s ease;
 }
 
-/* .popup-info.active {
+.popup-info.active {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1); 
-}*/
+}
 
 .popup-info h2 {
     font-size: 3.125rem;
