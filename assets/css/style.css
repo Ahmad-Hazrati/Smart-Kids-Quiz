@@ -6,3 +6,81 @@
     box-sizing: border-box;
     font-family: 'Andika', sans-serif;
 }
+
+body {
+    color: #fff;
+    background: #09001d;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+
+.sound {
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    right: 10px;
+    top: 20px;
+    color: #fff;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.sound i {
+    font-size: 1.5rem;
+    /* display: none; */
+}
+
+.sound i:hover  {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #0086D1;
+}
+
+.main {
+    min-height: 100vh;
+    background: url(/assets/images/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    pointer-events: auto;
+    transition: .3s ease;
+}
+
+.main.active {
+    filter: blur(15px);
+    pointer-events: none;
+}
+
+.home {
+    position: relative;
+    left: -50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
