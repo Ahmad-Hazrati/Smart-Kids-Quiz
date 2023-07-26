@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Smart kids quiz is an interactive general knowledge questions for children from age 3 to 12 years old">
+    <meta name="keywords"
+        content="smart kids, quiz, interactive, general knowledge question, KG 4-7, KG 8-10, KG 10-12">
+    <meta name="author" content="Ahmad Jawed Hazrati">
+    <!-- css file link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- favicon file link  -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Smart Kids Quiz</title>
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">Quiz</a>
+
+            <div id="sound">
+                <i id="sound-on" class="fa-solid fa-volume-high active"></i>
+                <i id="sound-off" class="fa-solid fa-volume-xmark"></i>
+            </div>
+
+            <div class="container">
+                <section class="quiz-section">
+                    <div class="quiz-box">
+                        <h1>KG 4-7 Years Quiz</h1>
+                        <div class="quiz-header">
+                            <span>Smart Kids</span>
+                            <span class="header-score">Score 0 / 10</span>
+                        </div>
+                        <h2 class="question-text">How many days are in a week?</h2>
+                        <div class="option-list">
+                            <div class="option">
+                                <span>A. 5</span>
+                            </div>
+                            <div class="option">
+                                <span>A. 6</span>
+                            </div>
+                            <div class="option">
+                                <span>A. 7</span>
+                            </div>
+                            <div class="option">
+                                <span>A. 8</span>
+                            </div>
+                            <div class="quiz-footer">
+                                <span class="question-total">1 of 10 Questions</span>
+                                <button class="next-btn">Next</button>
+                            </div>
+                        </div>
+                        <div class="result-box">
+                            <h2>Quiz Result!</h2>
+                            <div class="percentage-container">
+                                <div class="circular-progress">
+                                    <span class="progress-value">0%</span>
+                                </div>
+                                <span class="score-text">Your score 0 out of 10</span>
+                            </div>
+                            <div class="buttons">
+                                <button class="tryAgain-btn">Try Again!</button>
+                                <button class="goHome-btn">Go To Home</button>
+                            </div>
+                        </div>
+
+                </section>
+
+                <section class="home">
+                    <div class="home-content">
+                        <h1>Smart Kids</h1>
+                        <p>It's okay to not know, but it's not okay to not try.</p>
+                        <button class="start-btn">Start Quiz</button>
+                    </div>
+                </section>
+            </div>
+        </header>
+    </main>
+
+    <div class="popup-info">
+        <h2>Select your grade</h2>
+        <div class="info" id="grade">
+            <div class="kg4-7" id="kg4-7">
+                <label for="kg4-7">KG 4 - 7 Years</label>
+                <input type="radio" name="grade" id="kg4-7" value="kg4-7">
+            </div>
+            <div class="kg8-10" id="kg8-10">
+                <label for="kg8-10">KG 8 - 10 Years</label>
+                <input type="radio" name="grade" id="kg8-10" value="kg8-10">
+            </div>
+            <div class="kg10-12" id="kg10-12">
+                <label for="kg10-12">KG 10 - 12 Years</label>
+                <input type="radio" name="grade" id="kg10-12" value="kg10-12">
+            </div>
+        </div>
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Exit Quiz</button>
+            <a href="#" class="info-btn continue-btn">Continue</a>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript files-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
