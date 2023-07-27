@@ -1,6 +1,4 @@
-// import {
-//     kg4_7_Questions} from "./questions.js";
-
+//Variables declaration
 
 const startBtn = document.querySelector('.start-btn');
 const popupInfo = document.querySelector('.popup-info');
@@ -12,10 +10,9 @@ const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
 const goHomeBtn = document. querySelector('.goHome-btn');
-
-const kg4_7 = document.getElementById("");
-const kg8_10 = document.getElementById("medium");
-const kg10_12 = document.getElementById("hard");
+const kg4_7 = document.querySelector(".kg4-7");
+const kg8_10 = document.querySelector(".kg8-10");
+const kg10_12 = document.querySelector(".kg10-12");
 
 startBtn.onclick = () => {
     popupInfo.classList.add('active');
@@ -137,7 +134,7 @@ function optionSelected(answer) {
 
 function questionCounter(index) {
     const questionTotal = document.querySelector('.question-total');
-    questionTotal.textContent = `${index} of ${questions.length} Questions`;
+    questionTotal.textContent = `${index} of ${questions.length} questions`;
 }
 
 function headerScore() {

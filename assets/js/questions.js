@@ -55,7 +55,6 @@ let questions = [
             "C. 26",
             "D. 27"
         ]
-
     },
     {
         numb: 6,
@@ -102,6 +101,8 @@ let questions = [
         ]
     }
 ];
+
+
 //     {
 //         numb: 10,
 //         question: "Which is the tallest animal on the earth?",
