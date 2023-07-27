@@ -1,4 +1,13 @@
 //Variables declaration
+/* Audio */
+const backgroundMusic = new Audio('./assets/audio/background_music.mp3');
+const clickSound = new Audio('./assets/audio/mouse_click.mp3');
+const correctSound = new Audio('./assets/audio/correct_answer_sound.mp3');
+const incorrectSound = new Audio('./assets/audio/incorrect_answer_sound.mp3');
+const quizOver = new Audio('./assets/audio/quiz_over.mp3');
+
+const soundOn = document.getElementsByClassName('fa-volume-up')[0];
+const soundOff = document.getElementsByClassName('fa-volume-muted')[0];
 
 const startBtn = document.querySelector('.start-btn');
 const popupInfo = document.querySelector('.popup-info');
@@ -14,17 +23,48 @@ const kg4_7 = document.querySelector(".kg4-7");
 const kg8_10 = document.querySelector(".kg8-10");
 const kg10_12 = document.querySelector(".kg10-12");
 
+backgroundMusic.play();
+
+
+ /* changes the audio to muted */
+ soundOn.addEventListener('click', function () {
+    backgroundMusic.muted = true;
+    incorrectSound.muted = true;
+    correctSound.muted = true;
+    clickSound.muted = true;
+    quizOver.muted = true;
+
+    soundOff.classList.add('active');
+    soundOn.classList.remove('active');
+});
+/* changes the audio to unmuted */
+soundOff.addEventListener('click', function () {
+    backgroundMusic.muted = false;
+    incorrectSound.muted = false;
+    correctSound.muted = false;
+    clickSound.muted = false;
+    quizOver.muted = false;
+    soundOff.classList.remove('active');
+    soundOn.classList.add('active');
+});
+
+
 startBtn.onclick = () => {
+    clickSound.play();
     popupInfo.classList.add('active');
     main.classList.add('active');
+   
 }
 
 exitBtn.onclick = () => {
+    clickSound.play();
     popupInfo.classList.remove('active');
     main.classList.remove('active');
+    
 }
 
 continueBtn.onclick = () => {
+    clickSound.play();
     quizSection.classList.add('active');
     popupInfo.classList.remove('active');
     main.classList.remove('active');
@@ -36,6 +76,7 @@ continueBtn.onclick = () => {
 }
 
 tryAgainBtn.onclick = () => {
+    clickSound.play();
     quizBox.classList.add('active');
     nextBtn.classList.remove('active');
     resultBox.classList.remove('active');
@@ -50,6 +91,7 @@ tryAgainBtn.onclick = () => {
 }
 
 goHomeBtn.onclick = () => {
+    clickSound.play();
     quizSection.classList.remove('active');
     nextBtn.classList.remove('active');
     resultBox.classList.remove('active');
@@ -72,6 +114,7 @@ let userScore = 0;
 const nextBtn = document.querySelector('.next-btn');
 
 nextBtn.onclick = () => {
+    clickSound.play();
     if (questionCount < questions.length - 1) {
         questionCount++;
         showQuestions(questionCount);
@@ -80,6 +123,7 @@ nextBtn.onclick = () => {
         questionCounter(questionNumb);
         nextBtn.classList.remove('active');
     } else {
+        quizOver.play();
         showResultBox();
     }
 }
@@ -110,10 +154,12 @@ function optionSelected(answer) {
     let allOptions = optionList.children.length;
 
     if (userAnswer === correctAnswer) {
+        correctSound.play();
         answer.classList.add('correct');
         userScore++;
         headerScore();
     } else {
+        incorrectSound.play();
         answer.classList.add('incorrect');
 
         // if user selected answer is incorrect, select auto correct answer
