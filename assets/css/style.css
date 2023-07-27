@@ -273,7 +273,7 @@ body {
     flex-direction: column;
     padding: 1.25rem 1.875rem;
     /* opacity: 0; */
-    /* pointer-events: none; */
+    pointer-events: none;
     transform: scale(.9);
     transition: .3s ease;
     transition-delay: 0s;
@@ -377,7 +377,7 @@ body {
     color: rgba(255, 255, 255, .7);
     font-weight: 600;
     cursor: pointer;
-    /* pointer-events: none; */
+    pointer-events: none;
     transition: .5s;
 }
 
