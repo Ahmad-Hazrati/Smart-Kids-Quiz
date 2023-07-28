@@ -147,6 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 
+
 let questionCount = 0;
 let questionNumb = 1;
 let userScore = 0;
