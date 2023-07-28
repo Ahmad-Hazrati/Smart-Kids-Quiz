@@ -1,5 +1,5 @@
 // Import questions from questions.js
-import { kg4_7_Questions, kg8_10_Questions, kg10_12_Questions} from "./questions.js";
+import { kg4_7_Questions, kg8_10_Questions, kg10_12_Questions } from "./questions.js";
 
 
 //Variables declaration
@@ -34,22 +34,21 @@ let questions;
 
 // taken from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
-  
+    let currentIndex = array.length, randomIndex;
+
     // While there remain elements to shuffle.
     while (currentIndex != 0) {
-  
-      // Pick a remaining element.
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-  
-      // And swap it with the current element.
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
+
+        // Pick a remaining element.
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
     }
-  
     return array;
-  }
+}
 
 
 // Wait for DOM to finish loading before running the quiz
@@ -81,15 +80,28 @@ document.addEventListener("DOMContentLoaded", function () {
         clickSound.play();
         popupInfo.classList.add('active');
         main.classList.add('active');
-
     }
 
     exitBtn.onclick = () => {
         clickSound.play();
         popupInfo.classList.remove('active');
         main.classList.remove('active');
-
     }
+
+    ageSelection.forEach(selector => {
+        selector.addEventListener('change', () => {
+            continueBtn.removeAttribute('disabled');
+            if (selector.id === 'kg4-7') {
+                questions = kg4_7_Questions;
+            } else if (selector.id === 'kg8-10') {
+                questions = kg8_10_Questions;
+            } else {
+                questions = kg8_10_Questions;
+            }
+            questions = shuffle(questions).slice (0, 10);
+            }
+        )
+    })
 
     continueBtn.onclick = () => {
         clickSound.play();
