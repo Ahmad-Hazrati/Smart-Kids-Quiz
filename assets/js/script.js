@@ -6,8 +6,8 @@ const correctSound = new Audio('./assets/audio/correct_answer_sound.mp3');
 const incorrectSound = new Audio('./assets/audio/incorrect_answer_sound.mp3');
 const quizOver = new Audio('./assets/audio/quiz_over.mp3');
 
-const soundOn = document.getElementsByClassName('fa-volume-up')[0];
-const soundOff = document.getElementsByClassName('fa-volume-muted')[0];
+const soundOn = document.getElementById('sound-on');
+const soundOff = document.getElementById('sound-off');
 //buttons and containers
 const startBtn = document.querySelector('.start-btn');
 const popupInfo = document.querySelector('.popup-info');
@@ -24,6 +24,7 @@ const kg4_7 = document.querySelector(".kg4-7");
 const kg8_10 = document.querySelector(".kg8-10");
 const kg10_12 = document.querySelector(".kg10-12");
 
+const ageSelection = document.querySelectorAll('.age-selection input[type="radio"]');
 
 // Wait for DOM to finish loading before running the quiz
 // Get the button elements and add event listners to them

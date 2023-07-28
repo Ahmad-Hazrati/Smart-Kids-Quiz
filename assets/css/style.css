@@ -54,6 +54,21 @@ body {
     color: #0086d2;
 }
 
+#sound-on {
+    display: none;
+}
+
+#sound-on.active {
+    display: block;
+}
+
+#sound-off {
+    display: none;
+}
+
+#sound-off.active {
+    display: block;
+}
 
 .main {
     min-height: 100vh;
@@ -64,7 +79,7 @@ body {
     transition: .3s ease;
 }
 
-.main.active {
+.main.active > *:not(#sound-on){
     filter: blur(15px);
     pointer-events: none;
 }
@@ -203,6 +218,10 @@ body {
     color: #fff;
 }
 
+.age-selection label {
+    flex: 1 0 auto;
+}
+
 .popup-info .btn-group {
     display: flex;
     justify-content: space-between;
@@ -244,6 +263,17 @@ body {
 .popup-info .btn-group .info-btn:nth-child(2):hover {
     background: #004C91;
     border-color: #004C91;
+}
+
+.popup-info .btn-group .continue-btn[disabled] {
+    background: #999;
+    border-color: #999;
+    cursor: not-allowed;
+}
+
+.popup-info .btn-group .continue-btn[disabled]:hover {
+    background: #999;
+    border-color: #999;
 }
 
 .quiz-section {
@@ -497,5 +527,5 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    
+
 }
