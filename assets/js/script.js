@@ -1,3 +1,7 @@
+// Import questions from questions.js
+import { kg4_7_Questions, kg8_10_Questions, kg10_12_Questions} from "./questions.js";
+
+
 //Variables declaration
 //Audio
 const backgroundMusic = new Audio('./assets/audio/background_music.mp3');
@@ -8,6 +12,7 @@ const quizOver = new Audio('./assets/audio/quiz_over.mp3');
 
 const soundOn = document.getElementById('sound-on');
 const soundOff = document.getElementById('sound-off');
+
 //buttons and containers
 const startBtn = document.querySelector('.start-btn');
 const popupInfo = document.querySelector('.popup-info');
@@ -19,12 +24,33 @@ const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
 const goHomeBtn = document.querySelector('.goHome-btn');
-const grade = document.querySelector('.grade');
 const kg4_7 = document.querySelector(".kg4-7");
 const kg8_10 = document.querySelector(".kg8-10");
 const kg10_12 = document.querySelector(".kg10-12");
 
 const ageSelection = document.querySelectorAll('.age-selection input[type="radio"]');
+
+let questions;
+
+// taken from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+
 
 // Wait for DOM to finish loading before running the quiz
 // Get the button elements and add event listners to them
