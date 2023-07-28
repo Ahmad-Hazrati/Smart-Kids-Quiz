@@ -495,3 +495,7 @@ body {
     background: #0086D2;
     color: #fff;
 }
+
+@media screen and (max-width: 500px) {
+    
+}

@@ -133,7 +133,8 @@ nextBtn.onclick = () => {
 
 const optionList = document.querySelector('.option-list');
 
-/** This function shows the questions */
+/** 
+ * This function shows the questions */
 function showQuestions(index) {
     const questionText = document.querySelector('.question-text');
     questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
@@ -151,6 +152,10 @@ function showQuestions(index) {
     }
 }
 
+/** 
+ * This function checks if the user has selected the correct answer, 
+ * otherwise shows the correct answer
+ */
 function optionSelected(answer) {
     let userAnswer = answer.textContent;
     let correctAnswer = questions[questionCount].answer;
@@ -165,7 +170,7 @@ function optionSelected(answer) {
         incorrectSound.play();
         answer.classList.add('incorrect');
 
-        // if user selected answer is incorrect, select auto correct answer
+        // if user selected answer is incorrect answer, selects auto correct answer
         for (let i = 0; i < allOptions; i++) {
             if (optionList.children[i].textContent == correctAnswer) {
                 optionList.children[i].setAttribute('class', 'option correct');
