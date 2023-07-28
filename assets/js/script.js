@@ -176,7 +176,7 @@ const optionList = document.querySelector('.option-list');
  * This function shows the questions */
 function showQuestions(index) {
     const questionText = document.querySelector('.question-text');
-    questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
+    questionText.textContent = `${questions[index].question}`;
 
     let optionTag = `<div class="option"><span>${questions[index].options[0]}</span></div>
     <div class="option"><span>${questions[index].options[1]}</span></div>
@@ -187,7 +187,7 @@ function showQuestions(index) {
 
     const option = document.querySelectorAll('.option');
     for (let i = 0; i < option.length; i++) {
-        option[i].setAttribute('onclick', 'optionSelected(this)');
+        option[i].addEventListener('click', optionSelected);
     }
 }
 
@@ -196,18 +196,18 @@ function showQuestions(index) {
  * otherwise shows the correct answer
  */
 function optionSelected(answer) {
-    let userAnswer = answer.textContent;
+    let userAnswer = answer.target.textContent;
     let correctAnswer = questions[questionCount].answer;
     let allOptions = optionList.children.length;
 
     if (userAnswer === correctAnswer) {
         correctSound.play();
-        answer.classList.add('correct');
+        answer.target.classList.add('correct');
         userScore++;
         headerScore();
     } else {
         incorrectSound.play();
-        answer.classList.add('incorrect');
+        answer.target.classList.add('incorrect');
 
         // if user selected answer is incorrect answer, selects auto correct answer
         for (let i = 0; i < allOptions; i++) {
