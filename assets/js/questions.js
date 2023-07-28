@@ -99,242 +99,239 @@ let questions = [
             "C. Blue whale",
             "D. Buffalo"
         ]
+    },
+    {
+        numb: 10,
+        question: "Which is the tallest animal on the earth?",
+        answer: "A. Giraffe",
+        options: [
+            "A. Giraffe",
+            "B. Elephant",
+            "C. Deer",
+            "D. Ostrich"
+        ]
+    },
+    {
+        numb: 11,
+        question: "What type of bird lays the largest eggs?",
+        answer: "B. Ostrich",
+        options: [
+            "A. Hen",
+            "B. Ostrich",
+            "C. Crokodil",
+            "D. Snake"
+        ]
+    },
+    {
+        numb: 12,
+        question: "How many weeks are there in a month?",
+        answer: "D. Four",
+        options: [
+            "A. Three",
+            "B. Six",
+            "C. Five",
+            "D. Four"
+        ]
+    },
+    {
+        numb: 13,
+        question: "In which direction does the sun rise?",
+        answer: "A. East",
+        options: [
+            "A. East",
+            "B. North",
+            "C. West",
+            "D. South"
+        ]
+    },
+    {
+        numb: 14,
+        question: "How many zeroes are there in one thousand?",
+        answer: "C. Three",
+        options: [
+            "A. Four",
+            "B. Five",
+            "C. Three",
+            "D. Two"
+        ]
+    },
+    {
+        numb: 15,
+        question: "Which is the world’s largest flower?",
+        answer: "B. Rafflesia",
+        options: [
+            "A. Rose",
+            "B. Rafflesia",
+            "C. Tulip",
+            "D. Daffodil"
+        ]
+    },
+    {
+        numb: 16,
+        question: "How many hours are there in two days?",
+        answer: "C. 48 hours",
+        options: [
+            "A. 24 hours",
+            "B. 50 hours",
+            "C. 48 hours",
+            "D. 40 hours"
+        ]
+    },
+    {
+        numb: 17,
+        question: "How many bones does an adult human have?",
+        answer: "A. 206",
+        options: [
+            "A. 206",
+            "B. 106",
+            "C. 306",
+            "D. 150"
+        ]
+    },
+    {
+        numb: 18,
+        question: "Who was the first man to walk on the moon?",
+        answer: "B. Neil Armstrong",
+        options: [
+            "A. Neil Bohnen",
+            "B. Neil Armstrong",
+            "C. Albert Einstein",
+            "D. Superman"
+        ]
+    },
+    {
+        numb: 19,
+        question: "How many millimeters are there in 1cm?",
+        answer: "D. 10",
+        options: [
+            "A. 12",
+            "B. 20",
+            "C. 100",
+            "D. 10"
+        ]
+    },
+    {
+        numb: 20,
+        question: "Which is the nearest star to planet earth?",
+        answer: "B. Sun",
+        options: [
+            "A. Mars",
+            "B. Sun",
+            "C. Moon",
+            "D. Asteroid"
+        ]
+    },
+    {
+        numb: 21,
+        question: "Which is the longest river on the earth?",
+        answer: "B. Nile",
+        options: [
+            "A. Ganges",
+            "B. Nile",
+            "C. Amazon River",
+            "D. Volfa River"
+        ]
+    },
+    {
+        numb: 22,
+        question: "Which is the principal source of energy for earth?",
+        answer: "A. Sun",
+        options: [
+            "A. Sun",
+            "B. Moon",
+            "C. Wood",
+            "D. Oil"
+        ]
+    },
+    {
+        numb: 23,
+        question: "What is the standard taste of the water?",
+        answer: "C. Tasteless",
+        options: [
+            "A. Sour",
+            "B. Bitter",
+            "C. Tasteless",
+            "D. Sweet"
+        ]
+    },
+    {
+        numb: 24,
+        question: "Which is the tallest mountain in the world?",
+        answer: "A. Mount Everest",
+        options: [
+            "A. Mount Everest",
+            "B. K2",
+            "C. Makalu",
+            "D. Lhotse"
+        ]
+    },
+    {
+        numb: 25,
+        question: "Which is the fastest animal on the land?",
+        answer: "C. Cheetah",
+        options: [
+            "A. Deer",
+            "B. Tiger",
+            "C. Cheetah",
+            "D. Lion"
+        ]
+    },
+    {
+        numb: 26,
+        question: "Which continent is known as ‘Dark’ continent?",
+        answer: "D. Africa",
+        options: [
+            "A. Europe",
+            "B. South America",
+            "C. Australia",
+            "D. Africa"
+        ]
+    },
+    {
+        numb: 27,
+        question: "Which planet is known as the Red Planet?",
+        answer: "A. Mars",
+        options: [
+            "A. Mars",
+            "B. Marcury",
+            "C. Saturn",
+            "D. Jupiter"
+        ]
+    },
+    {
+        numb: 28,
+        question: "Which is the most sensitive organ in our body?",
+        answer: "C. Skin",
+        options: [
+            "A. Kidneys",
+            "B. Liver",
+            "C. Skin",
+            "D. Stomach"
+        ]
+    },
+    {
+        numb: 29,
+        question: "Which is the largest ocean in the world?",
+        answer: "D. Pacific Ocean",
+        options: [
+            "A. Arctic Ocean",
+            "B. Atlantic Ocean",
+            "C. Indian Ocean",
+            "D. Pacific Ocean"
+        ]
+    },
+    {
+        numb: 30,
+        question: "Which day is observed as World Environment Day?",
+        answer: "B. June 5",
+        options: [
+            "A. May 5",
+            "B. June 5",
+            "C. August 5",
+            "D. October 5"
+        ]
     }
 ];
-
-
-//     {
-//         numb: 10,
-//         question: "Which is the tallest animal on the earth?",
-//         answer: "A. Giraffe",
-//         options: [
-//             "A. Giraffe",
-//             "B. Elephant",
-//             "C. Deer",
-//             "D. Ostrich"
-//         ]
-//     },
-//     {
-//         numb: 11,
-//         question: "What type of bird lays the largest eggs?",
-//         answer: "B. Ostrich",
-//         options: [
-//             "A. Hen",
-//             "B. Ostrich",
-//             "C. Crokodil",
-//             "D. Snake"
-//         ]
-//     },
-//     {
-//         numb: 12,
-//         question: "How many weeks are there in a month?",
-//         answer: "D. Four",
-//         options: [
-//             "A. Three",
-//             "B. Six",
-//             "C. Five",
-//             "D. Four"
-//         ]
-//     },
-//     {
-//         numb: 13,
-//         question: "In which direction does the sun rise?",
-//         answer: "A. East",
-//         options: [
-//             "A. East",
-//             "B. North",
-//             "C. West",
-//             "D. South"
-//         ]
-//     },
-//     {
-//         numb: 14,
-//         question: "How many zeroes are there in one thousand?",
-//         answer: "C. Three",
-//         options: [
-//             "A. Four",
-//             "B. Five",
-//             "C. Three",
-//             "D. Two"
-//         ]
-//     },
-//     {
-//         numb: 15,
-//         question: "Which is the world’s largest flower?",
-//         answer: "B. Rafflesia",
-//         options: [
-//             "A. Rose",
-//             "B. Rafflesia",
-//             "C. Tulip",
-//             "D. Daffodil"
-//         ]
-//     },
-//     {
-//         numb: 16,
-//         question: "How many hours are there in two days?",
-//         answer: "C. 48 hours",
-//         options: [
-//             "A. 24 hours",
-//             "B. 50 hours",
-//             "C. 48 hours",
-//             "D. 40 hours"
-//         ]
-//     },
-//     {
-//         numb: 17,
-//         question: "How many bones does an adult human have?",
-//         answer: "A. 206",
-//         options: [
-//             "A. 206",
-//             "B. 106",
-//             "C. 306",
-//             "D. 150"
-//         ]
-//     },
-//     {
-//         numb: 18,
-//         question: "Who was the first man to walk on the moon?",
-//         answer: "B. Neil Armstrong",
-//         options: [
-//             "A. Neil Bohnen",
-//             "B. Neil Armstrong",
-//             "C. Albert Einstein",
-//             "D. Superman"
-//         ]
-//     },
-//     {
-//         numb: 19,
-//         question: "How many millimeters are there in 1cm?",
-//         answer: "D. 10",
-//         options: [
-//             "A. 12",
-//             "B. 20",
-//             "C. 100",
-//             "D. 10"
-//         ]
-//     },
-//     {
-//         numb: 20,
-//         question: "Which is the nearest star to planet earth?",
-//         answer: "B. Sun",
-//         options: [
-//             "A. Mars",
-//             "B. Sun",
-//             "C. Moon",
-//             "D. Asteroid"
-//         ]
-//     },
-//     {
-//         numb: 21,
-//         question: "Which is the longest river on the earth?",
-//         answer: "B. Nile",
-//         options: [
-//             "A. Ganges",
-//             "B. Nile",
-//             "C. Amazon River",
-//             "D. Volfa River"
-//         ]
-//     },
-//     {
-//         numb: 22,
-//         question: "Which is the principal source of energy for earth?",
-//         answer: "A. Sun",
-//         options: [
-//             "A. Sun",
-//             "B. Moon",
-//             "C. Wood",
-//             "D. Oil"
-//         ]
-//     },
-//     {
-//         numb: 23,
-//         question: "What is the standard taste of the water?",
-//         answer: "C. Tasteless",
-//         options: [
-//             "A. Sour",
-//             "B. Bitter",
-//             "C. Tasteless",
-//             "D. Sweet"
-//         ]
-//     },
-//     {
-//         numb: 24,
-//         question: "Which is the tallest mountain in the world?",
-//         answer: "A. Mount Everest",
-//         options: [
-//             "A. Mount Everest",
-//             "B. K2",
-//             "C. Makalu",
-//             "D. Lhotse"
-//         ]
-//     },
-//     {
-//         numb: 25,
-//         question: "Which is the fastest animal on the land?",
-//         answer: "C. Cheetah",
-//         options: [
-//             "A. Deer",
-//             "B. Tiger",
-//             "C. Cheetah",
-//             "D. Lion"
-//         ]
-//     },
-//     {
-//         numb: 26,
-//         question: "Which continent is known as ‘Dark’ continent?",
-//         answer: "D. Africa",
-//         options: [
-//             "A. Europe",
-//             "B. South America",
-//             "C. Australia",
-//             "D. Africa"
-//         ]
-//     },
-//     {
-//         numb: 27,
-//         question: "Which planet is known as the Red Planet?",
-//         answer: "A. Mars",
-//         options: [
-//             "A. Mars",
-//             "B. Marcury",
-//             "C. Saturn",
-//             "D. Jupiter"
-//         ]
-//     },
-//     {
-//         numb: 28,
-//         question: "Which is the most sensitive organ in our body?",
-//         answer: "C. Skin",
-//         options: [
-//             "A. Kidneys",
-//             "B. Liver",
-//             "C. Skin",
-//             "D. Stomach"
-//         ]
-//     },
-//     {
-//         numb: 29,
-//         question: "Which is the largest ocean in the world?",
-//         answer: "D. Pacific Ocean",
-//         options: [
-//             "A. Arctic Ocean",
-//             "B. Atlantic Ocean",
-//             "C. Indian Ocean",
-//             "D. Pacific Ocean"
-//         ]
-//     },
-//     {
-//         numb: 30,
-//         question: "Which day is observed as World Environment Day?",
-//         answer: "B. June 5",
-//         options: [
-//             "A. May 5",
-//             "B. June 5",
-//             "C. August 5",
-//             "D. October 5"
-//         ]
-//     }
-// ];
 
 // let kg8_10_Questions = [
 //     {

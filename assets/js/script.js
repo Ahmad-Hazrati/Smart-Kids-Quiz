@@ -1,5 +1,5 @@
 //Variables declaration
-/* Audio */
+//Audio
 const backgroundMusic = new Audio('./assets/audio/background_music.mp3');
 const clickSound = new Audio('./assets/audio/mouse_click.mp3');
 const correctSound = new Audio('./assets/audio/correct_answer_sound.mp3');
@@ -8,7 +8,7 @@ const quizOver = new Audio('./assets/audio/quiz_over.mp3');
 
 const soundOn = document.getElementsByClassName('fa-volume-up')[0];
 const soundOff = document.getElementsByClassName('fa-volume-muted')[0];
-
+//buttons and containers
 const startBtn = document.querySelector('.start-btn');
 const popupInfo = document.querySelector('.popup-info');
 const exitBtn = document.querySelector('.exit-btn');
@@ -18,92 +18,94 @@ const quizSection = document.querySelector('.quiz-section');
 const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
-const goHomeBtn = document. querySelector('.goHome-btn');
+const goHomeBtn = document.querySelector('.goHome-btn');
+const grade = document.querySelector('.grade');
 const kg4_7 = document.querySelector(".kg4-7");
 const kg8_10 = document.querySelector(".kg8-10");
 const kg10_12 = document.querySelector(".kg10-12");
 
-backgroundMusic.play();
 
+// Wait for DOM to finish loading before running the quiz
+// Get the button elements and add event listners to them
+document.addEventListener("DOMContentLoaded", function () {
+    /* changes the audio to muted */
+    soundOn.addEventListener('click', function () {
+        backgroundMusic.muted = true;
+        incorrectSound.muted = true;
+        correctSound.muted = true;
+        clickSound.muted = true;
+        quizOver.muted = true;
 
- /* changes the audio to muted */
- soundOn.addEventListener('click', function () {
-    backgroundMusic.muted = true;
-    incorrectSound.muted = true;
-    correctSound.muted = true;
-    clickSound.muted = true;
-    quizOver.muted = true;
+        soundOff.classList.add('active');
+        soundOn.classList.remove('active');
+    });
+    /* changes the audio to unmuted */
+    soundOff.addEventListener('click', function () {
+        backgroundMusic.muted = false;
+        incorrectSound.muted = false;
+        correctSound.muted = false;
+        clickSound.muted = false;
+        quizOver.muted = false;
+        soundOff.classList.remove('active');
+        soundOn.classList.add('active');
+    });
 
-    soundOff.classList.add('active');
-    soundOn.classList.remove('active');
-});
-/* changes the audio to unmuted */
-soundOff.addEventListener('click', function () {
-    backgroundMusic.muted = false;
-    incorrectSound.muted = false;
-    correctSound.muted = false;
-    clickSound.muted = false;
-    quizOver.muted = false;
-    soundOff.classList.remove('active');
-    soundOn.classList.add('active');
-});
+    startBtn.onclick = () => {
+        clickSound.play();
+        popupInfo.classList.add('active');
+        main.classList.add('active');
 
+    }
 
-startBtn.onclick = () => {
-    clickSound.play();
-    popupInfo.classList.add('active');
-    main.classList.add('active');
-   
-}
+    exitBtn.onclick = () => {
+        clickSound.play();
+        popupInfo.classList.remove('active');
+        main.classList.remove('active');
 
-exitBtn.onclick = () => {
-    clickSound.play();
-    popupInfo.classList.remove('active');
-    main.classList.remove('active');
-    
-}
+    }
 
-continueBtn.onclick = () => {
-    clickSound.play();
-    quizSection.classList.add('active');
-    popupInfo.classList.remove('active');
-    main.classList.remove('active');
-    quizBox.classList.add('active');
+    continueBtn.onclick = () => {
+        clickSound.play();
+        quizSection.classList.add('active');
+        popupInfo.classList.remove('active');
+        main.classList.remove('active');
+        quizBox.classList.add('active');
 
-    showQuestions(0);
-    questionCounter(1);
-    headerScore();
-}
+        showQuestions(0);
+        questionCounter(1);
+        headerScore();
+    };
 
-tryAgainBtn.onclick = () => {
-    clickSound.play();
-    quizBox.classList.add('active');
-    nextBtn.classList.remove('active');
-    resultBox.classList.remove('active');
+    tryAgainBtn.onclick = () => {
+        clickSound.play();
+        quizBox.classList.add('active');
+        nextBtn.classList.remove('active');
+        resultBox.classList.remove('active');
 
-    questionCount = 0;
-    questionNumb = 1;
-    userScore = 0;
-    showQuestions(questionCount);
-    questionCounter(questionNumb);
-    
-    headerScore();
-}
+        questionCount = 0;
+        questionNumb = 1;
+        userScore = 0;
+        showQuestions(questionCount);
+        questionCounter(questionNumb);
 
-goHomeBtn.onclick = () => {
-    clickSound.play();
-    quizSection.classList.remove('active');
-    nextBtn.classList.remove('active');
-    resultBox.classList.remove('active');
+        headerScore();
+    }
 
-    questionCount = 0;
-    questionNumb = 1;
-    userScore = 0;
-    showQuestions(questionCount);
-    questionCounter(questionNumb);
-    
-    headerScore();
-}
+    goHomeBtn.onclick = () => {
+        clickSound.play();
+        quizSection.classList.remove('active');
+        nextBtn.classList.remove('active');
+        resultBox.classList.remove('active');
+
+        questionCount = 0;
+        questionNumb = 1;
+        userScore = 0;
+        showQuestions(questionCount);
+        questionCounter(questionNumb);
+
+        headerScore();
+    }
+})
 
 
 let questionCount = 0;
@@ -128,9 +130,10 @@ nextBtn.onclick = () => {
     }
 }
 
+
 const optionList = document.querySelector('.option-list');
 
-//getting questions and options from question.js
+/** This function shows the questions */
 function showQuestions(index) {
     const questionText = document.querySelector('.question-text');
     questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
@@ -188,6 +191,9 @@ function headerScore() {
     headerScoreText.textContent = `Score: ${userScore} / ${questions.length}`;
 }
 
+
+/** 
+ * This function shows the result of the score */
 function showResultBox() {
     quizBox.classList.remove('active');
     resultBox.classList.add('active');
@@ -198,7 +204,7 @@ function showResultBox() {
     const circularProgress = document.querySelector('.circular-progress');
     const progressValue = document.querySelector('.progress-value');
 
-    let progressStartValue = -1;
+    let progressStartValue = 0;
     let progressEndValue = (userScore / questions.length) * 100;
     let speed = 10;
 
@@ -206,7 +212,7 @@ function showResultBox() {
         progressStartValue++;
 
         progressValue.textContent = `${progressStartValue}%`;
-        circularProgress.style.background = `conic-gradient(#0086D2 ${progressStartValue *3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+        circularProgress.style.background = `conic-gradient(#0086D2 ${progressStartValue * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
         if (progressStartValue == progressEndValue) {
             clearInterval(progress);
         }
