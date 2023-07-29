@@ -167,28 +167,29 @@ The main aim of this project is to construct a visually appealing, responsive an
 - Google chrome lighthouse is used to check and generate a comprehensive report regarding the site's performance, accessibility, best practices and SEO with taking both mobile and desktop view into consideration.
 
 ![Home Page. Lighthouse Report](/assets/images/readme/lighthouse_report_home_page.png)
-![Order Page. Lighthouse Report](/assets/images/readme/lighthouse_report_order_page.png)
-![Response Page. Lighthouse Report](/assets/images/readme/lighthouse_report_response_page.png)
+![Quiz Category Selection Page. Lighthouse Report](/assets/images/readme/lighthouse_report_quiz_category_selection_page.png)
+![Quiz Page. Lighthouse Report](/assets/images/readme/lighthouse_report_quiz_page.png)
+![Quiz Result Page. Lighthouse Report](/assets/images/readme/lighthouse_report_quiz_result_page.png)
 
 ---
 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official 
+  - No errors were returned when passing through the official W3C Markup Validation Service.
   ![W3C validator index.html](/assets/images/readme/w3c_validator_index_html.png)
-  ![W3C validator Ororder.html](/assets/images/readme/w3c_validator_order_html.png)
-  ![W3C validator response.html](/assets/images/readme/w3c_validator_response_html.png)
 
 - CSS
-  - No errors were found when passing through the official 
+  - No errors were found when passing through the official W3C CSS Validation Service - Jigsaw.
   ![(Jigsaw) validator](/assets/images/readme/jigsaw_validator_style_css.png)
 
----
-
-### Unfixed Bugs 
-
-- The lighthouse report for response page accessibility scored 88% due to missing label text for input in navigation bar section. The issue was not solved after many attempts, even with the tutor. The issue requires more time and in depth check which can be carried later on.
+  - JavaScript
+  - No errors were found when passing through the JSHint.
+  ![JSHint validator questions.js](/assets/images/readme/jshint_questions_js.png)
+  ![JSHint validator script.js](/assets/images/readme/jshint_script_1_js.png)
+  ![JSHint validator script.js](/assets/images/readme/jshint_script_2_js.png)
+  ![JSHint validator script.js](/assets/images/readme/jshint_script_3_js.png)
+![JSHint validator script.js](/assets/images/readme/jshint_script_4_js.png)
 
 ---
 
