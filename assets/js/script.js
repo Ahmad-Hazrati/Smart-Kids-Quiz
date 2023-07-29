@@ -24,9 +24,6 @@ const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
 const goHomeBtn = document.querySelector('.goHome-btn');
-const kg4_7 = document.querySelector(".kg4-7");
-const kg8_10 = document.querySelector(".kg8-10");
-const kg10_12 = document.querySelector(".kg10-12");
 
 const ageSelection = document.querySelectorAll('.age-selection input[type="radio"]');
 
@@ -96,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (selector.id === 'kg8-10') {
                 questions = kg8_10_Questions;
             } else {
-                questions = kg8_10_Questions;
+                questions = kg10_12_Questions;
             }
             questions = shuffle(questions).slice (0, 10);
             }
@@ -261,5 +258,5 @@ function showResultBox() {
         if (progressStartValue == progressEndValue) {
             clearInterval(progress);
         }
-    }, speed)
+    }, speed);
 }
