@@ -4,7 +4,7 @@ This is a browser based general knowledge quiz for kids from age 4 till 12 years
 
 The main aim of this project is to construct a visually appealing, responsive and accessible browser quiz that gives the user a modern user experience, and display how such an application can be constructed using JavaScript, HTML and CSS.
 
-![Responsice Mockup](/assets/images/readme/mockup.png)
+![Responsive Mockup](/assets/images/readme/mockup.png)
 
 ---
 
@@ -12,7 +12,7 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 ### First Time Visitor Goals:
 
-* As a First Time Visitor, I want to easily understand the main purpose of the site, so I can learn more about the organization.
+* As a First Time Visitor, I want to easily understand the main purpose of the site, so I can learn more about the quiz.
 * As a First Time Visitor, I want to be able to easily navigate through the website, so I can find the content.
 * As a First Time Visitor, I want to see the testimonials, so I can see whether the organization is trustworthy.
 
@@ -23,5 +23,62 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 ### Frequent Visitor Goals:
 * As a Frequent User, I want to check whether there are any changes with available quiz category and questions, so I can make a choice which quiz to experience.
+
+---
+
+## Features
+
++ ### Home Page
+
+    - Represents: 
+
+        * the main idea of the website.
+        * Emphasizes the strong points of the website.
+        * Arouse the user interest with a strong quote.
+        * Invites the user to experience the new adventure by clicking the start button.
+    - Facilities the user to control the sound effects.
+    - This section is responsive to all common screen sizes.
+
+    ![Home Page](/assets/images/readme/home_page.png)
+
+---
+
++ ### Quiz Category Selection Page
+
+  - Displays the user 3 quiz options to select based on his/her interest or age category. 
+  - Provides the user with 2 more buttons to go back to the home page or continue with the quiz.
+  - The button has an attribute of disabled until the user has selected an option.
+  - Blur the background to provide a distraction free environment for the user to engage with the quiz selection.
+  - This section is responsive to all common screen sizes.
+    
+    ![Quiz Category Selection Page](/assets/images/readme/quiz_category_page.png)
+
+---
+
++ ### Quiz Page
+
+  - Displays 10 random questions from the selected quiz type.
+  - Shows the number of questions and number of correct answered questions to the user. 
+  - Shows the status of answered question by highlighling the border of selected option and correct answer.
+  - Highlight the correct answer with green border and incorrect answer by red.
+  - In case the user answer is incorred then displays the correct answer to the user.
+  - Facilities the user with a button to go to the next question and finally to the result page.
+  - The button has an attribute of disabled until the user has selected an option.
+  - The background color is set to Blackcurrant which fully matches with the white fonts and provides an appealing user experience.
+  - This section is responsive to all common screen sizes.
+
+![Quiz Page](/assets/images/readme/quiz_page.png)
+
+---
+
++ ### Quiz Result Page
+
+  - This section will allow the user to see the result of quiz.
+  - Shows the result in number as well as in chart.
+  - Provides the user with the capability to retry the quiz or go to the home page.
+  - The result page has the same background color and fonts as quiz page.
+  - This section is responsive to all common screen sizes.
+
+![Quiz Result Page](/assets/images/readme/quiz_result_page.png)
 
 ---
