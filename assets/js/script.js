@@ -77,13 +77,13 @@ document.addEventListener("DOMContentLoaded", function () {
         clickSound.play();
         popupInfo.classList.add('active');
         main.classList.add('active');
-    }
+    };
 
     exitBtn.onclick = () => {
         clickSound.play();
         popupInfo.classList.remove('active');
         main.classList.remove('active');
-    }
+    };
 
     ageSelection.forEach(selector => {
         selector.addEventListener('change', () => {
@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             questions = shuffle(questions).slice (0, 10);
             }
-        )
-    })
+        );
+    });
 
     continueBtn.onclick = () => {
         clickSound.play();
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questionCounter(questionNumb);
 
         headerScore();
-    }
+    };
 
     goHomeBtn.onclick = () => {
         clickSound.play();
@@ -140,8 +140,8 @@ document.addEventListener("DOMContentLoaded", function () {
         questionCounter(questionNumb);
 
         headerScore();
-    }
-})
+    };
+});
 
 
 
@@ -165,7 +165,7 @@ nextBtn.onclick = () => {
         quizOver.play();
         showResultBox();
     }
-}
+};
 
 
 const optionList = document.querySelector('.option-list');

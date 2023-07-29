@@ -116,7 +116,7 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 ![Free Speech Quamarine](/assets/images/readme/free_speech_quamarine_color.png)
 ![Burgundy](/assets/images/readme/burgundy_color.png)
-![Black](/assets/images/readme/black_color.png.png)
+![Black](/assets/images/readme/black_color.png)
 ![Dark Cerulean](/assets/images/readme/dark_cerulean_color.png)
 ![Nobel](/assets/images/readme/nobel_color.png)
 ![Venice Blue](/assets/images/readme/venice_blue_color.png)
@@ -161,5 +161,35 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 ---
 
+## Testing 
+
+- This site is checked for any potential error in different browers and in different screen sizes. 
+- Google chrome lighthouse is used to check and generate a comprehensive report regarding the site's performance, accessibility, best practices and SEO with taking both mobile and desktop view into consideration.
+
+![Home Page. Lighthouse Report](/assets/images/readme/lighthouse_report_home_page.png)
+![Order Page. Lighthouse Report](/assets/images/readme/lighthouse_report_order_page.png)
+![Response Page. Lighthouse Report](/assets/images/readme/lighthouse_report_response_page.png)
+
+---
+
+### Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official 
+  ![W3C validator index.html](/assets/images/readme/w3c_validator_index_html.png)
+  ![W3C validator Ororder.html](/assets/images/readme/w3c_validator_order_html.png)
+  ![W3C validator response.html](/assets/images/readme/w3c_validator_response_html.png)
+
+- CSS
+  - No errors were found when passing through the official 
+  ![(Jigsaw) validator](/assets/images/readme/jigsaw_validator_style_css.png)
+
+---
+
+### Unfixed Bugs 
+
+- The lighthouse report for response page accessibility scored 88% due to missing label text for input in navigation bar section. The issue was not solved after many attempts, even with the tutor. The issue requires more time and in depth check which can be carried later on.
+
+---
 
 
