@@ -95,4 +95,71 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 ---
 
+## Design
+
+### Color Scheme
+
+- White (#FFF) color is used as a main font color along with Pacific blue color in all pages. It has a high contrast with the background colors, increase readibility and provides an awesome user experience . 
+
+![White](/assets/images/readme/white_color.png)
+
+- Pacific Blue (#0086d2) color is used as text and background color for most part of this website. This color has an eye catching effect and almost all children like it. 
+
+![Pacific Blue](/assets/images/readme/pacific_blue_color.png)
+
+- Blackcurrant (#09001d) color is used as a main background color in all pages except in the home page. It is used in the home page start button as hover color as well. This color provides a pleasant user experience by creating high contrast between different elements of the pages. 
+
+![Blackcurrant](/assets/images/readme/blackcurrant_color.png)
+
+- Free Speech Quamarine (#009F82) color is used as border color for correct answer and burgundy (#760023) color is used as border color for incorrect answer.
+- The colors (#000, #004C91, #999 and #2E496F) are used as text shadow and buttons hover.
+
+![Free Speech Quamarine](/assets/images/readme/free_speech_quamarine_color.png)
+![Burgundy](/assets/images/readme/burgundy_color.png)
+![Black](/assets/images/readme/black_color.png.png)
+![Dark Cerulean](/assets/images/readme/dark_cerulean_color.png)
+![Nobel](/assets/images/readme/nobel_color.png)
+![Venice Blue](/assets/images/readme/venice_blue_color.png)
+
+--- 
+
+### Typography
+
+![Main Font](/assets/images/readme/primary_font.png)
+
+- Andika Google Font is used as the main font of the website in order to increase readability of the content on the pages. This is one of the fonts special for kids. 
+
+![Accent Font](/assets/images/readme/accent_font.png)
+
+- Andika Google Font is used to attract viewers' attention to the website's logo and different pages' headings. It is used to make an accent on the strong points of the website, and to incentivize visitors to experience the quiz.
+
+### Wireframes
+
+- Wireframes is used to plan and sketch the website. 
+
+#### Mobile devices
+
+- [Home Page. Mobile Screen](/assets/images/readme/mobile_home_page.png)
+- [Quiz Category Selection Page. Mobile Screen](/assets/images/readme/mobile_quiz_category_selection_page.png)
+- [Quiz Page. Mobile Screen](/assets/images/readme/mobile_quiz_page.png)
+- [Quiz Result Page. Mobile Screen](/assets/images/readme/mobile_quiz_result_page.png)
+
+
+#### Tablets
+
+- [Home Page. Tablet Screen](/assets/images/readme/tablet_home_page.png)
+- [Quiz Category Selection Page. Tablet Screen](/assets/images/readme/tablet_quiz_category_selection_page.png)
+- [Quiz Page. Tablet Screen](/assets/images/readme/tablet_quiz_page.png)
+- [Quiz Result Page. Tablet Screen](/assets/images/readme/tablet_quiz_result_page.png)
+
+#### Desktop
+
+- [Home Page. Desktop Screen](/assets/images/readme/desktop_home_page.png)
+- [Quiz Category Selection Page. Desktop Screen](/assets/images/readme/desktop_quiz_category_selection_page.png)
+- [Quiz Page. Desktop Screen](/assets/images/readme/desktop_quiz_page.png)
+- [Quiz Result Page. Desktop Screen](/assets/images/readme/desktop_quiz_result_page.png)
+
+---
+
+
 
