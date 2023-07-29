@@ -193,4 +193,51 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 ---
 
+## Deployment
 
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the [GitHub repository](https://github.com/Ahmad-Hazrati/Smart-Kids-Quiz), navigate to the Settings tab 
+  - From the source section drop-down menu, select the **Main** Branch, then click "Save".
+  - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found [here](https://ahmad-hazrati.github.io/Smart-Kids-Quiz/)
+
+---
+
+## Local Deployment
+
+In order to make a local copy of this project, you can clone it.
+In your IDE Terminal, type the following command to clone my repository:
+
+- `git clone https://github.com/Ahmad-Hazrati/Smart-Kids-Quiz`
+
+--- 
+
+## Future improvements
+
+- 
+ * 
+
+---
+
+## Credits 
+
++ #### Content
+
+- Thanks to my Code Institute mentor Mr. Aleksei Konovalov for his guidance, insight and the constant confidence boost to help me in the right direction.
+
+- Thanks to Slack community for general references, support and encouragement received. 
+
+- The overall project idea and concept is taken from [Codehal Youtube Tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA&t=3296s)
+- Instructions on javaScript coding of sound is taken from [DanielMaherDev](https://github.com/DanielMaherDev/answertime)
+- Instructions on JavaScript coding for shuffle function to randomize the questions is taken from [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+- The question contents used in the project are taken from [edsys ](https://www.edsys.in/)
+- The sound icons in the header are taken from [Font Awesome](https://fontawesome.com/)
+- The fonts used in the site are taken from [Google Fonts](https://fonts.google.com/)
+
++ #### Media
+
+- The background image used in home page is from [Freepik](https://www.freepik.com/)
+- The mp3 audio files used in the project are taken from [Pixabay ](https://www.pixabay.com/)
+
+---
