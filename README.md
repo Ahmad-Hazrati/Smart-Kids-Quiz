@@ -7,3 +7,21 @@ The main aim of this project is to construct a visually appealing, responsive an
 ![Responsice Mockup](/assets/images/readme/mockup.png)
 
 ---
+
+## User Stories
+
+### First Time Visitor Goals:
+
+* As a First Time Visitor, I want to easily understand the main purpose of the site, so I can learn more about the organization.
+* As a First Time Visitor, I want to be able to easily navigate through the website, so I can find the content.
+* As a First Time Visitor, I want to see the testimonials, so I can see whether the organization is trustworthy.
+
+### Returning VisitorGoals:
+
+* As a Returning Visitor, I want to see various quizzes, so that I can choose and experience new information.
+* As a Returning Visitor, I want to see information about different questions, so that I can experience and learn them. 
+
+### Frequent Visitor Goals:
+* As a Frequent User, I want to check whether there are any changes with available quiz category and questions, so I can make a choice which quiz to experience.
+
+---
