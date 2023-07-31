@@ -4,11 +4,11 @@ import { kg4_7_Questions, kg8_10_Questions, kg10_12_Questions } from "./question
 
 //Variables declaration
 //Audio
-const backgroundMusic = new Audio('./assets/audio/background_music.mp3');
-const clickSound = new Audio('./assets/audio/mouse_click.mp3');
-const correctSound = new Audio('./assets/audio/correct_answer_sound.mp3');
-const incorrectSound = new Audio('./assets/audio/incorrect_answer_sound.mp3');
-const quizOver = new Audio('./assets/audio/quiz_over.mp3');
+const backgroundMusic = new Audio("./assets/audio/background_music.mp3");
+const clickSound = new Audio("./assets/audio/mouse_click.mp3");
+const correctSound = new Audio("./assets/audio/correct_answer_sound.mp3");
+const incorrectSound = new Audio("./assets/audio/incorrect_answer_sound.mp3");
+const quizOver = new Audio("./assets/audio/quiz_over.mp3");
 
 const soundOn = document.getElementById('sound-on');
 const soundOff = document.getElementById('sound-off');
@@ -24,9 +24,7 @@ const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
 const goHomeBtn = document.querySelector('.goHome-btn');
-
 const ageSelection = document.querySelectorAll('.age-selection input[type="radio"]');
-
 let questions;
 
 // taken from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
@@ -49,8 +47,9 @@ function shuffle(array) {
 
 
 // Wait for DOM to finish loading before running the quiz
-// Get the button elements and add event listners to them
+// Get the audio elements and add event listners to them
 document.addEventListener("DOMContentLoaded", function () {
+    backgroundMusic.play();
     /* changes the audio to muted */
     soundOn.addEventListener('click', function () {
         backgroundMusic.muted = true;
@@ -58,10 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
         correctSound.muted = true;
         clickSound.muted = true;
         quizOver.muted = true;
-
         soundOff.classList.add('active');
         soundOn.classList.remove('active');
     });
+
     /* changes the audio to unmuted */
     soundOff.addEventListener('click', function () {
         backgroundMusic.muted = false;
@@ -73,18 +72,24 @@ document.addEventListener("DOMContentLoaded", function () {
         soundOn.classList.add('active');
     });
 
+    // start button function
     startBtn.onclick = () => {
         clickSound.play();
         popupInfo.classList.add('active');
         main.classList.add('active');
     };
 
+    // exit button function
     exitBtn.onclick = () => {
         clickSound.play();
         popupInfo.classList.remove('active');
         main.classList.remove('active');
     };
 
+    /**
+     * age selection function gets 10 random questions from questions.js
+     * based on the user's selection
+     */
     ageSelection.forEach(selector => {
         selector.addEventListener('change', () => {
             continueBtn.removeAttribute('disabled');
@@ -95,11 +100,12 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 questions = kg10_12_Questions;
             }
-            questions = shuffle(questions).slice (0, 10);
-            }
+            questions = shuffle(questions).slice(0, 10);
+        }
         );
     });
 
+    // continue button function
     continueBtn.onclick = () => {
         clickSound.play();
         quizSection.classList.add('active');
@@ -112,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
         headerScore();
     };
 
+    // try again button function
     tryAgainBtn.onclick = () => {
         clickSound.play();
         quizBox.classList.add('active');
@@ -127,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
         headerScore();
     };
 
+    // go to home button function
     goHomeBtn.onclick = () => {
         clickSound.play();
         quizSection.classList.remove('active');
@@ -144,7 +152,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
 let questionCount = 0;
 let questionNumb = 1;
 let userScore = 0;
@@ -152,6 +159,7 @@ let userScore = 0;
 
 const nextBtn = document.querySelector('.next-btn');
 
+// next button function 
 nextBtn.onclick = () => {
     clickSound.play();
     if (questionCount < questions.length - 1) {

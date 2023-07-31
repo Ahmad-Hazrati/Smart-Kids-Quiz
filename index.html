@@ -28,13 +28,14 @@
             </div>
         </header>
 
+        <!-- Quiz container section -->
         <div class="container">
             <section class="quiz-section">
                 <div class="quiz-box">
                     <h1>Smart Kids Quiz
                     </h1>
                     <div class="quiz-header">
-                        <span class="quiz-category">Quiz Website Tutorials</span>
+                        <span class="quiz-category">"Fall seven times, stand up eight." <br>-Japanese proverb</span>
                         <span class="header-score">Score 0 / 10</span>
                     </div>
                     <h2 class="question-text">How many days are there in a week?</h2>
@@ -54,10 +55,11 @@
                     </div>
                     <div class="quiz-footer">
                         <span class="question-total">1 of 10 Questions</span>
-                        <button class="next-btn">Next</button>
+                        <button class="next-btn" aria-label="next">Next</button>
                     </div>
                 </div>
-
+                
+                <!-- Quiz result section -->
                 <div class="result-box">
                     <h2>Quiz Result!</h2>
                     <div class="percentage-container">
@@ -68,42 +70,49 @@
                     </div>
 
                     <div class="buttons">
-                        <button class="tryAgain-btn">Try Again!</button>
-                        <button class="goHome-btn">Go To Home</button>
+                        <button class="tryAgain-btn" aria-label="try-again">Try Again!</button>
+                        <button class="goHome-btn" aria-label="go-to-home">Go To Home</button>
                     </div>
                 </div>
 
             </section>
 
+            <!-- home page section -->
             <section class="home">
                 <div class="home-content">
                     <h1>Smart Kids</h1>
                     <p>It's okay to not know, but it's not okay to not try.</p>
-                    <button class="start-btn">Start Quiz</button>
+                    <button class="start-btn" aria-label="start-btn">Start Quiz</button>
                 </div>
             </section>
         </div>
     </main>
 
+    <!-- Quiz category selection section -->
     <div class="popup-info" id="popup-info">
-        <h2>Select your grade</h2>
-        <div class="grade" id="grade">
-            <div class="kg4-7 age-selection">
-                <label for="kg4-7">KG 4 - 7 Years</label>
-                <input type="radio" name="grade" id="kg4-7">
+        <fieldset>
+            <legend>
+                <h2>Select your grade</h2>
+            </legend>
+            <!-- <h2>Select your grade</h2> -->
+            <div class="grade" id="grade">
+                <div class="kg4-7 age-selection">
+                    <label for="kg4-7">KG 4 - 7 Years</label>
+                    <input type="radio" name="grade" id="kg4-7">
+                </div>
+                <div class="kg8-10 age-selection">
+                    <label for="kg8-10">KG 8 - 10 Years</label>
+                    <input type="radio" name="grade" id="kg8-10">
+                </div>
+                <div class="kg10-12 age-selection">
+                    <label for="kg10-12">KG 10 - 12 Years</label>
+                    <input type="radio" name="grade" id="kg10-12">
+                </div>
             </div>
-            <div class="kg8-10 age-selection">
-                <label for="kg8-10">KG 8 - 10 Years</label>
-                <input type="radio" name="grade" id="kg8-10">
-            </div>
-            <div class="kg10-12 age-selection">
-                <label for="kg10-12">KG 10 - 12 Years</label>
-                <input type="radio" name="grade" id="kg10-12">
-            </div>
-        </div>
+        </fieldset>
         <div class="btn-group">
-            <button class="info-btn exit-btn">Exit Quiz</button>
-            <button class="info-btn continue-btn" disabled>Continue</button>
+            <button class="info-btn exit-btn" aria-label="exit-quiz">Exit Quiz</button>
+            <button class="info-btn continue-btn" aria-label="continue" disabled>Continue</button>
         </div>
     </div>
 

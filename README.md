@@ -85,10 +85,15 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 ## Technologies Used
 
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles and layout of the site.
-- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was used to arrange items simmetrically on the pages and make them responsive.
-- [Balsamiq](https://balsamiq.com/) was used to make wireframes for the website.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) is used as the foundation of the site.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - is used to add the styles and layout of the site.
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - is used to arrange items simmetrically on the pages and make them responsive.
+- [Balsamiq](https://balsamiq.com/) is used to make wireframes for the website.
+- [Techsini ](https://techsini.com/) is used to check and generate mockup accross different devices.
+- [My Color Space](https://mycolor.space/) is used to check and generate different color palette.
+- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) is used to check and enhance the accessibility of the website for all users.
+- [WeBAIM](https://webaim.org/) is used to check the contrast among different elements of the website.
+- [Color Hex Org](https://color-hex.org/) is used to find the name of the color palette for README.
 - [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
 - [Git](https://git-scm.com/) was used for the version control of the website.
 - [GitHub](https://github.com/) was used to host the code of the website.
@@ -103,7 +108,7 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 ![White](/assets/images/readme/white_color.png)
 
-- Pacific Blue (#0086d2) color is used as text and background color for most part of this website. This color has an eye catching effect and almost all children like it. 
+- Pacific Blue (#0086d2) color is used as text and background color for most part of this website. This color has an eye catching effect and almost all kids like it. 
 
 ![Pacific Blue](/assets/images/readme/pacific_blue_color.png)
 
@@ -165,11 +170,13 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 - This site is checked for any potential error in different browers and in different screen sizes. 
 - Google chrome lighthouse is used to check and generate a comprehensive report regarding the site's performance, accessibility, best practices and SEO with taking both mobile and desktop view into consideration.
+- WAVE is used to check and enhance the accessibility of the website to all sorts of users.
 
 ![Home Page. Lighthouse Report](/assets/images/readme/lighthouse_report_home_page.png)
 ![Quiz Category Selection Page. Lighthouse Report](/assets/images/readme/lighthouse_report_quiz_category_selection_page.png)
 ![Quiz Page. Lighthouse Report](/assets/images/readme/lighthouse_report_quiz_page.png)
 ![Quiz Result Page. Lighthouse Report](/assets/images/readme/lighthouse_report_quiz_result_page.png)
+- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 
 ---
 
@@ -213,12 +220,6 @@ In your IDE Terminal, type the following command to clone my repository:
 
 --- 
 
-## Future improvements
-
-- 
- * 
-
----
 
 ## Credits 
 

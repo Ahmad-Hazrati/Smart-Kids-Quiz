@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* remove default padding, margins and border on all elements
+and set the font family for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,7 @@ body {
     overflow: hidden;
 }
 
+/* headings and logo */
 .header {
     position: fixed;
     top: 0;
@@ -70,6 +73,7 @@ body {
     display: block;
 }
 
+/* main section */
 .main {
     min-height: 100vh;
     background: url(../images/bg.jpg) no-repeat;
@@ -91,6 +95,7 @@ body {
     width: 200%;
 }
 
+/* home section */
 .home {
     position: relative;
     left: -50%;
@@ -142,6 +147,7 @@ body {
     box-shadow: none;
 }
 
+/* quiz category selection section */
 .popup-info {
     position: absolute;
     top: 50%;
@@ -160,6 +166,10 @@ body {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-info fieldset {
+    border: none;
 }
 
 .popup-info h2 {
@@ -278,6 +288,7 @@ body {
     border-color: #999;
 }
 
+/* quiz section */
 .quiz-section {
     position: relative;
     left: -50%;
@@ -342,7 +353,7 @@ body {
 }
 
 .quiz-header .header-score {
-    background: #0086D2;
+    border: 1px solid #0086D2;
     border-radius: 3px;
     padding: 7px;
 }
@@ -426,6 +437,7 @@ body {
     border-color: #004C91;
 }
 
+/* quiz result section */
 .quiz-section .result-box {
     position: absolute;
     top: 50%;
@@ -528,6 +540,7 @@ body {
     color: #fff;
 }
 
+/* Media queries */
 /* For screen sizes from 500px wide and down */
 @media screen and (max-width: 500px) {
     .container {
