@@ -363,6 +363,11 @@ body {
     font-weight: 600;
 }
 
+.quiz-category span {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
 .option-list .option {
     width: 100%;
     padding: .75rem;
@@ -541,8 +546,8 @@ body {
 }
 
 /* Media queries */
-/* For screen sizes from 500px wide and down */
-@media screen and (max-width: 500px) {
+/* For screen sizes from 600px wide and down */
+@media screen and (max-width: 600px) {
     .container {
         display: inline-block;
         justify-content: center;
@@ -623,6 +628,11 @@ body {
     .quiz-box .question-text {
         font-size: 1rem;
         font-weight: 600;
+    }
+
+    .quiz-category span {
+        font-size: 0.5rem;
+        font-weight: 400;
     }
 
     .option-list .option {
