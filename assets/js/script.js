@@ -54,7 +54,6 @@ function shuffle(array) {
 // Wait for DOM to finish loading before running the quiz
 // Get the audio elements and add event listeners to them
 document.addEventListener("DOMContentLoaded", function () {
-    // backgroundMusic.play();
     /* changes the audio to muted */
     soundOn.addEventListener("click", function () {
         backgroundMusic.muted = true;
@@ -68,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* changes the audio to unmuted */
     soundOff.addEventListener("click", function () {
+        backgroundMusic.play();
         backgroundMusic.muted = false;
         incorrectSound.muted = false;
         correctSound.muted = false;
