@@ -232,7 +232,7 @@ In your IDE Terminal, type the following command to clone my repository:
 
 - Further features to implement are:
   * Add additional functionality such as:
-     * registeration form, review page, can choose font size, color and background color.
+     * registeration form, review page, user can choose font size, color and background color.
   * Store the user data in a database
   * transform the code as a mobile app
   * add accessability report with [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/);
