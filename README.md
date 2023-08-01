@@ -6,6 +6,8 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 ![Responsive Mockup](/assets/images/readme/mockup.png)
 
+The live link can be found [here](https://ahmad-hazrati.github.io/Smart-Kids-Quiz/)
+
 ---
 
 ## User Stories
@@ -14,7 +16,6 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 * As a First Time Visitor, I want to easily understand the main purpose of the site, so I can learn more about the quiz.
 * As a First Time Visitor, I want to be able to easily navigate through the website, so I can find the content.
-* As a First Time Visitor, I want to see the testimonials, so I can see whether the organization is trustworthy.
 
 ### Returning VisitorGoals:
 
@@ -91,7 +92,6 @@ The main aim of this project is to construct a visually appealing, responsive an
 - [Balsamiq](https://balsamiq.com/) is used to make wireframes for the website.
 - [Techsini ](https://techsini.com/) is used to check and generate mockup accross different devices.
 - [My Color Space](https://mycolor.space/) is used to check and generate different color palette.
-- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) is used to check and enhance the accessibility of the website for all users.
 - [WeBAIM](https://webaim.org/) is used to check the contrast among different elements of the website.
 - [Color Hex Org](https://color-hex.org/) is used to find the name of the color palette for README.
 - [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
@@ -170,13 +170,8 @@ The main aim of this project is to construct a visually appealing, responsive an
 
 - This site is checked for any potential error in different browers and in different screen sizes. 
 - Google chrome lighthouse is used to check and generate a comprehensive report regarding the site's performance, accessibility, best practices and SEO with taking both mobile and desktop view into consideration.
-- WAVE is used to check and enhance the accessibility of the website to all sorts of users.
 
 ![Home Page. Lighthouse Report](/assets/images/readme/lighthouse_report_home_page.png)
-![Quiz Category Selection Page. Lighthouse Report](/assets/images/readme/lighthouse_report_quiz_category_selection_page.png)
-![Quiz Page. Lighthouse Report](/assets/images/readme/lighthouse_report_quiz_page.png)
-![Quiz Result Page. Lighthouse Report](/assets/images/readme/lighthouse_report_quiz_result_page.png)
-- [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 
 ---
 
@@ -193,10 +188,15 @@ The main aim of this project is to construct a visually appealing, responsive an
   - JavaScript
   - No errors were found when passing through the JSHint.
   ![JSHint validator questions.js](/assets/images/readme/jshint_questions_js.png)
-  ![JSHint validator script.js](/assets/images/readme/jshint_script_1_js.png)
-  ![JSHint validator script.js](/assets/images/readme/jshint_script_2_js.png)
-  ![JSHint validator script.js](/assets/images/readme/jshint_script_3_js.png)
-![JSHint validator script.js](/assets/images/readme/jshint_script_4_js.png)
+  ![JSHint validator script.js](/assets/images/readme/jshint_script_js.png)
+
+---
+
+### Fixed Bugs 
+
+- The 1st 10 questions were displayed to the user sequentially and based on the question number. To overcome it and could display questions randomly to the user, shuffle function is used.
+- The background music sound was played when the website loaded. To fix it the music sound is removed from sound-on function and added to sound-off.
+- There was a loop in progress value in result section when the user answered all questions incorrectly. The issue is solved with shifting the code "progressStartValue++;" at the end of the function.
 
 ---
 
@@ -220,6 +220,17 @@ In your IDE Terminal, type the following command to clone my repository:
 
 --- 
 
+## Future improvements
+
+- Further features to implement are:
+  * Add additional functionality such as:
+     * registeration form, review page, can choose font size, color and background color.
+  * Store the user data in a database
+  * transform the code as a mobile app
+  * add accessability report with [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/);
+  * improve the quality of the commit messages (I am aware that some of them are not very clear and not meeting the standards and will improve them in the future).
+
+---
 
 ## Credits 
 
