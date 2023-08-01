@@ -192,11 +192,19 @@ The live link can be found [here](https://ahmad-hazrati.github.io/Smart-Kids-Qui
 
 ---
 
+## Bugs 
+
 ### Fixed Bugs 
 
 - The 1st 10 questions were displayed to the user sequentially and based on the question number. To overcome it and could display questions randomly to the user, shuffle function is used.
 - The background music sound was played when the website loaded. To fix it the music sound is removed from sound-on function and added to sound-off.
 - There was a loop in progress value in result section when the user answered all questions incorrectly. The issue is solved with shifting the code "progressStartValue++;" at the end of the function.
+
+---
+
+### Unfixed Bugs 
+
+- No unfixed bugs.
 
 ---
 
